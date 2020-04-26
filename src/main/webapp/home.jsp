@@ -9,10 +9,24 @@
     <body>
     Hello Spring Boot REST/ World Name=${name}
     <br>
-    <form action = "addAlien">
-        aid: <input type = "text" name = "aid">
+<%--    <form action = "addAlien">--%>
+<%--        aid: <input type = "text" name = "aid">--%>
+<%--        <br>--%>
+<%--        name: <input type = "text" name = "aname">--%>
+<%--        <br>--%>
+<%--        language: <input type = "text" name = "tech">--%>
+<%--        <input type = "submit" value = "Submit">--%>
+<%--        <br>--%>
+<%--    </form>--%>
+<%--    <form action = "getAlien">--%>
+<%--        aid: <input type = "text" name = "aid">--%>
+<%--        <br>--%>
+<%--        <input type = "submit" value = "Submit">--%>
+<%--        <br>--%>
+<%--    </form>--%>
+    <form action = "getManyAlien">
+        technology: <input type = "text" name = "tech">
         <br>
-        name: <input type = "text" name = "aname">
         <input type = "submit" value = "Submit">
         <br>
     </form>
