@@ -12,11 +12,11 @@ public class HelloController {
 
     @RequestMapping("/hello")
     public String hello(HttpServletRequest req) {
-        System.out.println("name="+req.getParameter("name"));
+        System.out.println("name=="+req.getParameter("name"));
         //return "name="+req.getParameter("name");
         HttpSession s = req.getSession();
         s.setAttribute("name",req.getParameter("name"));
-        return "home";
+        return "home.jsp";
     }
 
 }

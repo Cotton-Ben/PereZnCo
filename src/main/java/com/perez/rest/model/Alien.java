@@ -5,10 +5,18 @@ import javax.persistence.Id;
 
 @Entity
 public class Alien {
-
     @Id
     private int aid;
     private String aname;
+
+    @Override
+    public String toString() {
+        return "Alien{" +
+                "aid=" + aid +
+                ", aname='" + aname + '\'' +
+                '}';
+    }
+
 
 
     public int getAid() {
@@ -26,4 +34,5 @@ public class Alien {
     public void setAname(String aname) {
         this.aname = aname;
     }
+
 }

@@ -14,11 +14,13 @@ public class AlienController {
 
     @RequestMapping("/")
     public String home() {
+        System.out.println("At /");
         return("home.jsp");
     }
 
     @RequestMapping("/addAlien")
     public String addAlien(Alien a) {
+        System.out.println("At /addAlien ... alien="+a.toString());
         repo.save(a);
         return("home.jsp");
     }
